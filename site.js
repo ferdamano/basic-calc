@@ -7,7 +7,6 @@ function number(element){
 
 function evaluateButton(element){
     element.onclick = (e) => {
-        console.log("kumadi");
         const inputText = document.getElementById("arithmetic");
         inputText.value = eval(inputText.value);
     }
@@ -25,6 +24,6 @@ function addListenerToInputs() {
     });
 }
 
-module.exports = (function () {
+(function () {
     addListenerToInputs();
 })();
