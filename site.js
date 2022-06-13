@@ -12,7 +12,15 @@ function evaluateButton(element){
     }
 }
 
+function clr(element){
+    element.onclick = (e) => {
+        const inputText = document.getElementById("arithmetic");
+        inputText.value = "";
+    }
+}
+
 function addListenerToInputs() {
+    console.log('nakadi');
     const numbers = "0123456789+-*/.";
     document.querySelectorAll('input[type=button]').forEach(element => {
         if(numbers.indexOf(element.value) > -1){
@@ -20,6 +28,9 @@ function addListenerToInputs() {
         }
         else if(element.value == "="){
             evaluateButton(element);
+        }
+        else if(element.value == "c"){
+            clr(element);
         }
     });
 }
