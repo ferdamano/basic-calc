@@ -1,0 +1,26 @@
+{
+  "name": "basic-calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "site.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferdamano/basic-calc.git"
+  },
+  "author": "Ferdinand McDaniel Amano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferdamano/basic-calc/issues"
+  },
+  "homepage": "https://github.com/ferdamano/basic-calc#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1"
+  }
+}
